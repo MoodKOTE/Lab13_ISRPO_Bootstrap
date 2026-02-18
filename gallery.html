@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксперимент с Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Моё Портфолио</h2>
+
+        <div class="text-center mb-4">
+            <div class="btn-group" role="group">
+                <button class="btn btn-outline-primary" onclick="filterGallery('all', this)">Все</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('web', this)">Веб-дизайн</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('photo', this)">Фотография</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('graphics', this)">Графика</button>
+            </div>
+        </div>
+
+        <div class="row g-3">
+
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://placeholder.apptor.studio/400/300/website.png" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Корпоративный сайт</h6>
+                        <small class="text-muted">Веб-дизайн</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 gallery-item" data-category="photo">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg&s"
+                        class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Кот</h6>
+                        <small class="text-muted">Фото</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 gallery-item" data-category="photo">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp16KPLHwQfPN_TvAVXQJ_IIw1Ak3MOUKDzg&s"
+                        class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Лес</h6>
+                        <small class="text-muted">Фото</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 gallery-item" data-category="graphics">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtlEGqaEfimyM-BLe3L_ds-kILTjMY_1TTg&s"
+                        class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Чертеж запчасти</h6>
+                        <small class="text-muted">Графика</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 gallery-item" data-category="graphics">
+                <div class="card h-100">
+                    <img src="https://www.kgau.ru/distance/2013/m5/004/img/8/image037.gif" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Чертеж</h6>
+                        <small class="text-muted">Графика</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BlGKljUPgKZM1ThF1jY5tGZ4ZdAcaV_Yjw&s"
+                        class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Корпоративный сайт</h6>
+                        <small class="text-muted">Веб-дизайн</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function filterGallery(category, btnElement) {
+            const items = document.querySelectorAll(".gallery-item");
+            const buttons = document.querySelectorAll(".btn-group .btn");
+
+            buttons.forEach(btn => btn.classList.remove("active"));
+            btnElement.classList.add("active");
+
+            items.forEach(item => {
+                const itemCategory = item.dataset.category;
+
+                if (category === "all" || category === itemCategory) {
+                    item.classList.remove("d-none");
+                } else {
+                    item.classList.add("d-none");
+                }
+            });
+        }
+
+        window.onload = function () {
+            document.querySelector(".btn-group .btn").classList.add("active");
+        };
+    </script>
+
+</body>
+
+</html>
