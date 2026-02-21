@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(246, 218, 166);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: mediumslateblue !important;
+    transition: color 0.3s ease;
+}
+
+#home {
+    background: linear-gradient(135deg, orange 0%, forestgreen 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    color: white;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 40px 0;
+    margin-top: 80px;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="my.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <!-- Кнопка для мобильного меню -->
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Пункты меню -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" id="services">
+        <h2 class="text-center mb-5">Мои навыки</h2>
+        <div class="row g-4">
+            <!-- Карточка 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Blender🎃</h5>
+                        <p class="card-text">
+                            Есть навыки работы в Blender
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Сайты😎</h5>
+                        <p class="card-text">
+                            Есть базовое написание сайтов на HTML, CSS.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Базовое понимание C#</h5>
+                        <p class="card-text">
+                            Написание простейших программ на C#
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row g-3">
+        <h2 class="text-center">Галерея</h2>
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://placeholder.apptor.studio/400/300/website.png" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Корпоративный сайт</h6>
+                        <small class="text-muted">Веб-дизайн</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKH_J0ZccoKq-9Ru5EdM2KUwHcc9PUBWf6g&s" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Кот</h6>
+                        <small class="text-muted">Его кот</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://icdn.lenta.ru/images/2025/05/13/18/20250513184900219/wide_4_3_a99235c2d838b580bbb9501ba495255a.jpg" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Окак</h6>
+                        <small class="text-muted">окак</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSEvi5sthGTiBuPDQQs-jYYUSfToLmVxWQQ&s" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Горы</h6>
+                        <small class="text-muted">гора</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3bLRVzymxRYrGdrLJsdF6Q5TNuzHaKJmTA&s" class="card-img-top">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-0">Peak</h6>
+                        <small class="text-muted">игра</small>
+                    </div>
+                </div>
+            </div>
+
+    <div class="container my-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <!-- Имя -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required />
+                        <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите корректный email
+                        </div>
+                    </div>
+                    <!-- Сообщение -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"
+                            required></textarea>
+                        <div class="invalid-feedback">Пожалуйста, введите сообщение</div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" required />
+                        <label class="form-check-label" for="agree">
+                            Я согласен с политикой конфиденциальности
+                        </label>
+                        <div class="invalid-feedback">
+                            Вы должны согласиться с условиями
+                        </div>
+                    </div>
+                    <!-- Кнопка отправки -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Отправить сообщение
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция "О себе" -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-5">О себе</h2>
+        
+        <!-- Центрированная картинка -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-4">
+                <img class="img-fluid rounded d-block mx-auto" 
+                     style="max-width: 400px;"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKH_J0ZccoKq-9Ru5EdM2KUwHcc9PUBWf6g&s" 
+                     alt="Фото кота"/>
+            </div>
+        </div>
+
+        <!-- Карточки с информацией -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-light rounded h-100">
+                    <h4 class="text-primary">Моя миссия</h4>
+                    <p class="mb-0">
+                        Научиться делать сайты при помощи HTML, CSS, JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-primary text-white rounded h-100">
+                    <h4>Мои положительные качества</h4>
+                    <ul class="mb-0">
+                        <li>Добрый</li>
+                        <li>Дружелюбный</li>
+                        <li>Общительный</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>О компании</h5>
+                    <p>
+                        Мы создаем современные веб-решения для вашего бизнеса с
+                        использованием передовых технологий.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@myportfolio.com</li>
+                        <li>Телефон: +7 (999) 123-45-67</li>
+                        <li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255, 255, 255, 0.1)" />
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2026 MyPortfolio. Все права защищены.</p>
+                <p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+             <script>
+        // Валидация формы Bootstrap
+        (function () {
+            "use strict";
+            const form = document.getElementById("contactForm");
+            form.addEventListener(
+                "submit",
+                function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        event.preventDefault();
+                        alert("Форма успешно отправлена!");
+                        form.reset();
+                        form.classList.remove("was-validated");
+                    }
+                    form.classList.add("was-validated");
+                },
+                false
+            );
+        })();
+    </script>
+</body>
+</html>
